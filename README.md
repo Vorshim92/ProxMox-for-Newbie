@@ -3,12 +3,27 @@
 
 ![logo](./images/proxmoxlogo.webp)
 
+# SOMMARIO
+**CONTENUTI**
 
+- [**SETUP INIZIALE - BIOS**](#setup/bios)
+
+
+## SETUP/BIOS:
+installa PROXMOX con impostazione UEFI settata in BIOS (Disabilitare assolutamente dal BIOS l'impostazione SECURE BOOT e CSM/Legacy)
+
+
+
+
+
+
+
+
+
+
+ex:
 # Titolo H1
 ## Titolo H2
 ### Titolo H3
 #### Titolo H4
 ##### Titolo H5
-
-## Installare PROXMOX:
-installa PROXMOX con impostazione UEFI settata in BIOS (Disabilitare assolutamente dal BIOS l'impostazione SECURE BOOT e CSM/Legacy)
