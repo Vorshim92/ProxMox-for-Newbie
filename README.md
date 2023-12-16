@@ -6,7 +6,7 @@
 # SOMMARIO
 **CONTENUTI**
 
-- [**SETUP INIZIALE - BIOS**](#setup/bios)
+- [**SETUP INIZIALE - BIOS**](#setupbios)
 
 
 ## SETUP/BIOS:
