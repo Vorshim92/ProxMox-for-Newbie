@@ -2,14 +2,6 @@
 
 Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata comandi e nozioni! se ho scritto cazzate sentitevi liberi di commentare e aprire issue a gogo e anche di insultarmi!
 
-<div align="center">
-	<br>
-		<img src="/images/proxmoxlogo.svg" width="800" height="400" alt="logosvg">
-	</a>
-	<br>
-</div>
-
-
 ![logo](./images/proxmoxlogo.svg)
 
 # SOMMARIO
