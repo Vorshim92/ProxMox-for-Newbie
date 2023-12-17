@@ -1,5 +1,6 @@
-<p align="center">
-# ProxMox for Newbie</p>
+# <p align="center">
+ProxMox for Newbie
+</p>
 Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata comandi e nozioni! se ho scritto cazzate sentitevi liberi di commentare e aprire issue a gogo e anche di insultarmi!
 
 ![logo](./images/proxmoxlogo.webp)
