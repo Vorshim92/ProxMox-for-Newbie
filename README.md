@@ -36,7 +36,7 @@ se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootlo
 Boot0006* Linux Boot Manager    [...] File(\EFI\systemd\systemd-bootx64.efi)
 
 > [!NOTE]
-> Una cosa che mi ha fatto uscire tribolare inizialmente! Il fatto che vedrete GRUB come bootloader non vorrà dire che il sistema sarà in modalità LEGACY!!
+> Una cosa che mi ha fatto tribolare inizialmente! Il fatto che vedrete GRUB come bootloader non vorrà dire che il sistema sarà in modalità LEGACY!!
 Per distinguere quale dei 2 bootloader è utilizzato basterà mandare il comando di prima e leggere l'output ma già dalla parte estetica sarà possibile riconoscerli.
 GRUB è GRUB, schermata blu con la scritta GRUB in alto (vedi foto)
 
