@@ -66,7 +66,7 @@
 				}
 </style>
 	<div class="container">
-		<img src="/images/proxmoxlogo.svg"  alt="logosvg">
+		<img src="proxmoxlogo.svg"  alt="logosvg">
 		</div>
 	</div>
 	</foreignObject>
