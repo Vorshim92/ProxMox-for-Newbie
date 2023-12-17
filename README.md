@@ -20,14 +20,11 @@ due immagini esempio di queste impostazioni (potrebbero variare in base alla sch
 Fatto questo il nostro sistema ProxMox verrà installato senza problemi in modalità UEFI.
 Volendo fare un check per assicurarci che sia effettivamente così potremmo dare questo comando dalla shell:
 
-> efibootmgr -v
-> *efibootmgr -v*
-> **efibootmgr -v**
-`efibootmgr -v`
+
 ```
 efibootmgr -v
 ```
-<kbd>efibootmgr -v</kbd>
+
 
 se l'output del comando darà una cosa del genere allora il bootloader (GRUB) starà utilizando la modalità UEFI:
 Boot0005* proxmox       [...] File(\EFI\proxmox\grubx64.efi)
@@ -87,3 +84,9 @@ align="left" or "right"</details>
 <p align="center">
   <img eccecc>
 </p>
+
+> efibootmgr -v
+> *efibootmgr -v*
+> **efibootmgr -v**
+`efibootmgr -v`
+<kbd>efibootmgr -v</kbd>
