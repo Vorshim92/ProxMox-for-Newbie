@@ -11,14 +11,37 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 
 
 ## SETUP/BIOS:
-installa PROXMOX con impostazione UEFI settata in BIOS:
-è assolutamente importante DISABILITARE  dal BIOS l'impostazione SECURE BOOT e CSM/Legacy
-due immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto pozione ma tendenzialmente si troveranno sulla scheda BOOT)
+prima di partire con l'installazione vera e propria di PROXMOX assicuriamoci di mettere l'impostazione UEFI nel BIOS:
+
+> [!IMPORTANT]
+> è assolutamente importante DISABILITARE  dal BIOS anche l'impostazione SECURE BOOT e CSM/Legacy
+
+alcune immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto pozione ma tendenzialmente si troveranno sulla scheda BOOT)
  <img src="./images/CSM.png" alt="CSM" width=60% height="60%" align="right">
  <img src="./images/UEFI.jpg" alt="UEFI" width=30% height="30%">
  <img src="./images/SecureBoot.jpg" alt="SecureBoot" width=30% height="30%">
 
 Fatto questo il nostro sistema ProxMox verrà installato senza problemi in modalità UEFI.
+
+Cominciamo quindi inserendo il pennino usb precedentemente formattato (io uso Rufus per formattarlo e metterci sopra la ISO di Proxmox)
+e avviamolo, seguiranno una serie di immagini esempio del processo di installazione:
+
+ <img src="./images/setup/1.png" alt="CSM" width=50% height="50%">
+ <img src="./images/setup/2.png" alt="UEFI" width=50% height="50%">
+ <img src="./images/setup/3.png" alt="SecureBoot" width=50% height="50%">
+ <img src="./images/setup/4.png" alt="CSM" width=50% height="50%">
+ <img src="./images/setup/5.png" alt="UEFI" width=50% height="50%">
+
+ dopo il riavvio vi ritroverete su una schermata nera con il login, a noi interesserà soltanto segnarci l'indirizzo IP per poter entrare nella WebUI da un altro pc in rete tramite browser:
+ <img src="./images/setup/IP-login.png" alt="SecureBoot" width=50% height="50%">
+
+
+
+
+
+
+
+
 Volendo fare un check per assicurarci che sia effettivamente così potremmo dare questo comando dalla shell:
 
 
@@ -45,6 +68,8 @@ GRUB è GRUB, schermata blu con la scritta GRUB in alto (vedi foto)
 Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 righe al centro selezionabili. (vedi foto)
 
  <img src="./images/systemdboot.png" alt="SystemdBoot" width=50% height="50%">
+
+
 
 
 
