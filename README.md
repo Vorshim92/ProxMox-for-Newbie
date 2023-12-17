@@ -17,21 +17,24 @@ prima di partire con l'installazione vera e propria di PROXMOX assicuriamoci di 
 > è assolutamente importante DISABILITARE  dal BIOS anche l'impostazione SECURE BOOT e CSM/Legacy
 
 alcune immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto pozione ma tendenzialmente si troveranno sulla scheda BOOT)
-
+<details>
+  <summary>IMMAGINI</summary>
  <img src="./images/CSM.png" alt="CSM" width=50% height="50%">
  <img src="./images/UEFI.jpg" alt="UEFI" width=50% height="50%">
- <img src="./images/SecureBoot.jpg" alt="SecureBoot" width=60% height="60%">
+ <img src="./images/SecureBoot.jpg" alt="SecureBoot" width=60% height="60%"></details>
+
 
 Fatto questo il nostro sistema ProxMox verrà installato senza problemi in modalità UEFI.
 
 Cominciamo quindi inserendo il pennino usb precedentemente formattato (io uso Rufus per formattarlo e metterci sopra la ISO di Proxmox)
 e avviamolo, seguiranno una serie di immagini esempio del processo di installazione:
-
+<details>
+  <summary>IMMAGINI</summary>
  <img src="./images/setup/1.png" alt="CSM" width=50% height="50%">
  <img src="./images/setup/2.png" alt="UEFI" width=50% height="50%">
  <img src="./images/setup/3.png" alt="SecureBoot" width=50% height="50%">
  <img src="./images/setup/4.png" alt="CSM" width=50% height="50%">
- <img src="./images/setup/5.png" alt="UEFI" width=50% height="50%">
+ <img src="./images/setup/5.png" alt="UEFI" width=50% height="50%"></details>
 
  dopo il riavvio vi ritroverete su una schermata nera con il login, a noi interesserà soltanto segnarci l'indirizzo IP per poter entrare nella WebUI da un altro pc in rete tramite browser:
  <img src="./images/setup/IP-login.png" alt="SecureBoot" width=50% height="50%">
