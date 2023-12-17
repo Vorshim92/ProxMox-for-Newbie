@@ -15,8 +15,7 @@ installa PROXMOX con impostazione UEFI settata in BIOS:
 due immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto pozione ma tendenzialmente si troveranno sulla scheda BOOT)
  <img src="./images/CSM.png" alt="CSM" width=50% height="50%" img align="left">
  <img src="./images/UEFI.jpg" alt="UEFI" width=50% height="50%" img align="right">
- <p align="center"><img src="./images/SecureBoot.jpg" alt="SecureBoot" width=50% height="50%"></p>
-
+ <img src="./images/SecureBoot.jpg" alt="SecureBoot" width=50% height="50%" img align="center">
 
 
 
