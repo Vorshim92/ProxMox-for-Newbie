@@ -55,10 +55,10 @@ efibootmgr -v
 
 
 se l'output del comando darà una cosa del genere allora il bootloader (GRUB) starà utilizando la modalità UEFI:
-Boot0005* proxmox       [...] File(\EFI\proxmox\grubx64.efi)
+> Boot0005* proxmox       [...] File(\EFI\proxmox\grubx64.efi)
 
 se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootloader e non GRUB (ma sempre in UEFI mode) .
-Boot0006* Linux Boot Manager    [...] File(\EFI\systemd\systemd-bootx64.efi)
+> Boot0006* Linux Boot Manager    [...] File(\EFI\systemd\systemd-bootx64.efi)
 
 > [!NOTE]
 > Una cosa che mi ha fatto tribolare inizialmente! Il fatto che vedrete GRUB come bootloader non vorrà dire che il sistema sarà in modalità LEGACY!!
