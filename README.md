@@ -13,9 +13,10 @@
 installa PROXMOX con impostazione UEFI settata in BIOS:
 è assolutamente importante DISABILITARE  dal BIOS l'impostazione SECURE BOOT e CSM/Legacy
 due immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto pozione ma tendenzialmente si troveranno sulla scheda BOOT)
- <img src="./images/CSM.png" alt="CSM" width=50% height="50%" img align="left">
- <img src="./images/UEFI.jpg" alt="UEFI" width=50% height="50%" img align="right">
- <img src="./images/SecureBoot.jpg" alt="SecureBoot" width=50% height="50%" img align="center">
+ <img src="./images/CSM.png" alt="CSM" width=80% height="80%" align="right">
+ <img src="./images/UEFI.jpg" alt="UEFI" width=30% height="30%">
+ <img src="./images/SecureBoot.jpg" alt="SecureBoot" width=30% height="30%">
+
 
 
 
@@ -33,3 +34,7 @@ ex:
 ### Titolo H3
 #### Titolo H4
 ##### Titolo H5
+align="left" or "right"
+<p align="center">
+  <img eccecc>
+</p>
