@@ -20,7 +20,7 @@ due immagini esempio di queste impostazioni (potrebbero variare in base alla sch
 Fatto questo il nostro sistema ProxMox verrà installato senza problemi in modalità UEFI.
 Volendo fare un check per assicurarci che sia effettivamente così potremmo dare questo comando dalla shell:
 
-efibootmgr -v
+> **efibootmgr -v**
 
 se l'output del comando darà una cosa del genere allora il bootloader (GRUB) starà utilizando la modalità UEFI:
 Boot0005* proxmox       [...] File(\EFI\proxmox\grubx64.efi)
@@ -50,15 +50,18 @@ Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 rig
 
 
 
-
-
+<details>
+  <summary>testo</summary>
 ex:
 # Titolo H1
 ## Titolo H2
 ### Titolo H3
 #### Titolo H4
 ##### Titolo H5
-align="left" or "right"
+align="left" or "right"</details>
+
+
+
 <p align="center">
   <img eccecc>
 </p>
