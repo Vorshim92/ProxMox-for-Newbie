@@ -64,9 +64,9 @@ se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootlo
 > Una cosa che mi ha fatto tribolare inizialmente! Il fatto che vedrete GRUB come bootloader non vorrà dire che il sistema sarà in modalità LEGACY!!
 Per distinguere quale dei 2 bootloader è utilizzato basterà mandare il comando di prima e leggere l'output ma già dalla parte estetica sarà possibile riconoscerli.
 GRUB è GRUB, schermata blu con la scritta GRUB in alto (vedi foto)
-><img src="./images/GRUB.png" alt="GRUB" width=50% height="50%">
-Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 righe al centro selezionabili. (vedi foto)
-<img src="./images/systemdboot.png" alt="SystemdBoot" width=50% height="50%">
+> <img src="./images/GRUB.png" alt="GRUB" width=50% height="50%">
+> Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 righe al centro selezionabili. (vedi foto)
+> <img src="./images/systemdboot.png" alt="SystemdBoot" width=50% height="50%">
 
 
 
