@@ -17,7 +17,7 @@ prima di partire con l'installazione vera e propria di PROXMOX assicuriamoci di 
 > [!IMPORTANT]
 > è assolutamente importante DISABILITARE  dal BIOS anche l'impostazione SECURE BOOT e CSM/Legacy
 
-alcune immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto pozione ma tendenzialmente si troveranno sulla scheda BOOT)
+alcune immagini esempio di queste impostazioni (potrebbero variare in base alla scheda madre in quanto posizione, tendenzialmente si troveranno sulla scheda BOOT)
 <details>
   <summary>IMMAGINI BIOS</summary>
  <img src="./images/CSM.png" alt="CSM" width=50% height="50%">
