@@ -45,6 +45,25 @@ Seguiranno una serie di immagini esempio del processo di installazione:
  <img src="./images/setup/IP-login.png" alt="SecureBoot" width=50% height="50%">
 
 
+# FIRST LOGIN
+Adesso potremo loggare sia tramite webUI andando su 
+```
+https://162.198.51.2:8006/
+```
+oppure tramite ssh con
+```
+ssh root@162.198.51.2
+```
+> [!NOTE]
+> La password ovviamente sarà quella impostata durante il setup iniziale!
+> [!TIP]
+> Io vi consiglio di entrare direttamente da WebUI (se potete) anche perché sarà possibile avviare la shell direttamente da lì e gestire tutte le funzioni di proxmox da lì è più semplice e intuitivo. Ovviamente si può fare anche tutto da terminale!
+ <img src="./images/setup/webui-login.png" alt="webui" width=50% height="50%">
+ <img src="./images/setup/shell-prox-webui.png" alt="CSM" width=50% height="50%">
+
+> [!IMPORTANT]
+> Fate attenzione poiché la webUI gira su protocollo HTTPS quindi non appena visiterete la pagina vi darà l'errore che la pagina non sarà sicura poiché è una certificazione non registrata e quindi non presente nei database, più avanti farò una guida anche per fixare questa situazione. Per ora basterà skippare questo advise e proseguire normalmente.
+ <img src="./images/setup/certificazione.png" alt="CSM" width=50% height="50%">
 
 
 
