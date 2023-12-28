@@ -58,7 +58,7 @@ ssh root@162.198.51.2
 > La password ovviamente sarà quella impostata durante il setup iniziale!
 
 > [!TIP]
-> Io vi consiglio di entrare direttamente da WebUI (se potete) anche perché sarà possibile avviare la shell direttamente da lì e gestire tutte le funzioni di proxmox da lì è più semplice e intuitivo. Ovviamente si può fare anche tutto da terminale!
+> Io vi consiglio di entrare direttamente da WebUI (se potete), anche perché sarà possibile avviare la shell direttamente da lì e gestire tutte le funzioni di proxmox da lì è più semplice e intuitivo. Ovviamente si può fare anche tutto da terminale!
  <img src="./images/setup/webui-login.png" alt="webui" width=50% height="50%">
  <img src="./images/setup/shell-prox-webui.png" alt="CSM" width=50% height="50%">
 
@@ -84,6 +84,7 @@ se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootlo
 Se dovesse comparire qualcosa come questo output
 > Boot0002* proxmox	[...] File(\EFI\PROXMOX\SHIMX64.EFI)
 > Boot0005* UEFI OS	[...] File(\EFI\BOOT\BOOTX64.EFI)..BO
+
 sarà comunque in UEFI ma utilizzerà SHIMX64 invece di GRUB che è il "validatore" per avviare GRUB nel caso in cui dovesse essere attivo SECURE BOOT. 
 
 > [!NOTE]
