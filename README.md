@@ -8,7 +8,7 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 **CONTENUTI**
 
 - [**SETUP INIZIALE - BIOS**](#setupbios)
-- [**POST SETUP**](#postsetup)
+- [**POST SETUP**](#post-setup)
 
 
 ## SETUP/BIOS:
