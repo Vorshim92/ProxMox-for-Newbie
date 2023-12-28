@@ -83,7 +83,6 @@ se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootlo
 
 Se dovesse comparire qualcosa come questo output
 > Boot0002* proxmox	[...] File(\EFI\PROXMOX\SHIMX64.EFI)
-Boot0005* UEFI OS	[...] File(\EFI\BOOT\BOOTX64.EFI)..BO
 
 sarà comunque in UEFI ma utilizzerà SHIMX64 invece di GRUB che è il "validatore" per avviare GRUB nel caso in cui dovesse essere attivo SECURE BOOT. 
 
