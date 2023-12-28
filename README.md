@@ -99,7 +99,7 @@ Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 rig
 <img src="./images/systemdboot.png" alt="SystemdBoot" width=50% height="50%">
 
 > [!NOTE]
-> Eventualmente potrete anche fare un check per capire se siete in modalità UEFI (indipendentemente dal bootloader) controllando se la cartella /sys/firmware/efi è vuota o se non esiste proprio.
+> Eventualmente potrete anche fare un check per capire se siete in modalità UEFI (indipendentemente dal bootloader) controllando se la cartella /sys/firmware/efi è vuota o se non esiste proprio. (ovviamente se siete in UEFI sarà popolata da file e cartelle)
 
 
 
