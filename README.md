@@ -65,6 +65,14 @@ se l'output del comando darà una cosa del genere allora il bootloader (GRUB) st
 se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootloader e non GRUB (ma sempre in UEFI mode) .
 > Boot0006* Linux Boot Manager    [...] File(\EFI\systemd\systemd-bootx64.efi)
 
+Se dovesse comparire qualcosa come questo output
+> Boot0002* proxmox	[...] File(\EFI\PROXMOX\SHIMX64.EFI)
+> Boot0005* UEFI OS	[...] File(\EFI\BOOT\BOOTX64.EFI)..BO
+sarà comunque in UEFI ma utilizzerà SHIMX64 invece di GRUB che è il "validatore" per avviare GRUB nel caso in cui dovesse essere attivo SECURE BOOT. 
+
+> [!NOTE]
+> Stranamente da me è rimasto comunque impostato SHIMX anche se Secure Boot è disabilitato. Non è un problema, partirà comunque GRUB. Volendo si può cambiare la entry boot andando nel bios e modificando il file (se il vostro bios vi permette di farlo, se no andrebbe fatto da UEFI SHELL che è un po' più complesso e se ci sarà tempo farò una breve guida per giocare anche con quel tool)
+
 > [!NOTE]
 > Una cosa che mi ha fatto tribolare inizialmente! Il fatto che vedrete GRUB come bootloader non vorrà dire che il sistema sarà in modalità LEGACY!!
 Per distinguere quale dei 2 bootloader è utilizzato basterà mandare il comando di prima e leggere l'output ma già dalla parte estetica sarà possibile riconoscerli.
