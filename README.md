@@ -56,6 +56,7 @@ ssh root@162.198.51.2
 ```
 > [!NOTE]
 > La password ovviamente sarà quella impostata durante il setup iniziale!
+
 > [!TIP]
 > Io vi consiglio di entrare direttamente da WebUI (se potete) anche perché sarà possibile avviare la shell direttamente da lì e gestire tutte le funzioni di proxmox da lì è più semplice e intuitivo. Ovviamente si può fare anche tutto da terminale!
  <img src="./images/setup/webui-login.png" alt="webui" width=50% height="50%">
@@ -67,11 +68,7 @@ ssh root@162.198.51.2
 
 
 
-
-
-
-Volendo fare un check per assicurarci che sia effettivamente così potremmo dare questo comando dalla shell:
-
+Una volta fatto il Login potremo fare un check per assicurarci che sia effettivamente tutto sistemato e funzionante in UEFI, daremo quindi questo comando dalla shell:
 
 ```
 efibootmgr -v
