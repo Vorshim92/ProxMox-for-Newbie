@@ -8,6 +8,7 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 **CONTENUTI**
 
 - [**SETUP INIZIALE - BIOS**](#setupbios)
+- [**POST SETUP**](#postsetup)
 
 
 ## SETUP/BIOS:
@@ -72,7 +73,13 @@ GRUB è GRUB, schermata blu con la scritta GRUB in alto (vedi foto)
 Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 righe al centro selezionabili. (vedi foto)
 <img src="./images/systemdboot.png" alt="SystemdBoot" width=50% height="50%">
 
+> [!NOTE]
+> Eventualmente potrete anche fare un check per capire se siete in modalità UEFI (indipendentemente dal bootloader) controllando se la cartella /sys/firmware/efi è vuota o se non esiste proprio.
 
+
+
+
+## POST-SETUP:
 
 
 
