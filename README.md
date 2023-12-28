@@ -9,6 +9,7 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 
 - [**SETUP INIZIALE - BIOS**](#setupbios)
 - [**POST SETUP**](#post-setup)
+- [**CONFIGURAZIONE PCI PASSTHROUGH**](#configurazione-pci-passthrough)
 
 
 ## SETUP/BIOS:
@@ -141,6 +142,7 @@ Adesso, andando su "local (proxmox)", sentitevi liberi di caricare tutte le imma
 
 
 
+## CONFIGURAZIONE PCI PASSTHROUGH:
 
 
 
