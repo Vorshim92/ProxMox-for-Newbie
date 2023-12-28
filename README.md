@@ -105,10 +105,38 @@ Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 rig
 
 ## POST-SETUP:
 
+se è presente una vecchia installazione di Proxmox nel tuo sistema, ti sarà stato chiesto sicuramente durante l'ultima installazione di rinominare la vecchia PVE in "pve-old"-
+Quindi andiamo a rimuoverla:
+andiamo nella GUI view di Proxmox, sotto DATACENTER a poi su "DISKS - LVM", cerchiamo lì il nome PVE-OLD per intero e prendiamone nota (ex: PVE-OLD-6049DC)
+nella shell di comando di proxmox (o in ssh) mandiamo questi comandi:
+
+lvremove PVE-OLD-6049DC
+e confermiamo con Y
+
+dopo aver fatto questo potremo WIPPARE il vecchio disk utilizzato dalla sezione DISKs sulla GUI
+
+REPOSITORY
+Dobbiamo cambiare la repository da Enterprise a No-Enterprise (non avendo un abbonamento con proxmox)
+andiamo sulla GUI nella sezione REPOSITORIES e selezioniamo ADD e scegliamo dall'elenco "No-Subscription"
+non dimenticate di selezionare e disabilitare la repository ENTERPRISE già presente dalla lista.
+adesso o dalla gui di proxmox sempre su REPOSITORY o tramite terminale con APT UPDATE && APT UPGRADE potrete aggiornare le repo e i pacchetti.
+
+E' consigliato anche estendere la partizione PVE BOOT rimuovendo quella data (praticamente lasciando una singola partizione)
+
+estendiamo LVM PVE BOOT SPACE con questi comandi:
+
+lvremove /dev/pve/data
+confirm
+
+lvresize -l +100%FREE /dev/pve/root
+
+resize2fs /dev/mapper/pve-root
+
+Adesso potrete anche rimuovere la souce storage local-lvm dalla gui andando su:
+Datacenter - Storage - "local-lvm" 
 
 
-
-
+Adesso, andando su "local (proxmox)", sentitevi liberi di caricare tutte le immagini ISO nella sezione "ISO IMAGES" utilizzando il tasto UPLOAD or Download from URL"
 
 
 
@@ -119,11 +147,13 @@ Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 rig
 <details>
   <summary>testo</summary>
 ex:
+
 # Titolo H1
 ## Titolo H2
 ### Titolo H3
 #### Titolo H4
 ##### Titolo H5
+
 align="left" or "right"</details>
 
 > [!NOTE]
