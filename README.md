@@ -27,7 +27,7 @@ alcune immagini esempio di queste impostazioni (potrebbero variare in base alla 
 Fatto questo il nostro sistema ProxMox verrà installato senza problemi in modalità UEFI.
 > [!IMPORTANT]
 > Ovviamente formattando il pennino USB in modalità GPT UEFI con un tool come Rufus!
-<a title="RUFUS" href="https://rufus.ie/it/" target="_blank" >RUFUS LINK</a>
+<a title="RUFUS" href="https://rufus.ie/it/" target="_blank" rel="noopener noreferrer">RUFUS LINK</a>
 
 
 Cominciamo quindi inserendo il pennino usb precedentemente formattato (io uso Rufus per formattarlo e metterci sopra la ISO di Proxmox)
