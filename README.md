@@ -71,7 +71,7 @@ ssh root@162.198.51.2
  <img src="./images/setup/certificazione.png" alt="CSM" width=50% height="50%">
 
 
-
+### UEFI BOOTLOADER:
 Una volta fatto il Login potremo fare un check per assicurarci che sia effettivamente tutto sistemato e funzionante in UEFI, daremo quindi questo comando dalla shell:
 
 ```
