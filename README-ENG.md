@@ -1,6 +1,6 @@
 # <div align="center">**ProxMox for Newbie**</div>
 
-Una semplice guida (ITA-<a href="README-ENG.md">ENG</a>) per nabbazzi come me! giusto per tenere  a portata comandi e nozioni! se ho scritto cazzate sentitevi liberi di commentare e aprire issue a gogo e anche di insultarmi!
+Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata comandi e nozioni! se ho scritto cazzate sentitevi liberi di commentare e aprire issue a gogo e anche di insultarmi!
 
 ![logo](./images/proxmoxlogo.webp)
 
