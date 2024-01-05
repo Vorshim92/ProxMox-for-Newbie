@@ -6,7 +6,6 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 
 # SOMMARIO
 
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>CONTENUTI</summary>
   <ol>
