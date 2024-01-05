@@ -5,12 +5,6 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 ![logo](./images/proxmoxlogo.webp)
 
 # SOMMARIO
-**CONTENUTI**
-
-- [**SETUP INIZIALE - BIOS**](#setupbios)
-- [**POST SETUP**](#post-setup)
-- [**CONFIGURAZIONE PCI PASSTHROUGH**](#pci-passthrough)
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
