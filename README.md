@@ -23,8 +23,9 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
       <ul>
         <li><a href="#repository">REPOSITORY</a></li>
         <li><a href="#eliminare-popup-no-subscription">NO POPUP SUBSCRIPTION</a></li>
-        <li><a href="#partitioning">PARTITIONING</a></li>
+        <li><a href="#partitioning-local">PARTITIONING LOCAL(PVE)</a></li>
         <li><a href="#isos">UPLOAD ISOs</a></li>
+        <li><a href="#configure-storage">CONFIGURAZIONE STORAGE(NVME-SSD-HDD)</a></li>
       </ul>
     </li>
     <li><a href="#pci-passthrough">PCI PASSTHROUGH</a></li>
@@ -158,7 +159,9 @@ IMMAGINE
 
 
 adesso o dalla gui di proxmox sempre su REPOSITORY o tramite terminale con APT UPDATE && APT UPGRADE potrete aggiornare le repo e i pacchetti.
+
 IMMAGINE WEB
+
 IMMAGINE SHELL
 
 
@@ -174,7 +177,7 @@ Basterà mandare questo comando qui sotto e il gioco è fatto:
 sed -Ezi.bak "s/(Ext.Msg.show\(\{\s+title: gettext\('No valid sub)/void\(\{ \/\/\1/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
 ```
 
-### PARTITIONING
+### PARTITIONING LOCAL
 E' consigliato anche estendere la partizione PVE BOOT rimuovendo quella data (praticamente lasciando una singola partizione)
 
 IMMAGINE
@@ -193,6 +196,7 @@ resize2fs /dev/mapper/pve-root
 
 Adesso potrete anche rimuovere la souce storage local-lvm dalla gui andando su:
 Datacenter - Storage - "local-lvm" 
+
 IMMAGINE
 
 REBOOT
@@ -201,7 +205,28 @@ REBOOT
 
 ### ISOs:
 Adesso, andando su "local (proxmox)", sentitevi liberi di caricare tutte le immagini ISO nella sezione "ISO IMAGES" utilizzando il tasto UPLOAD or Download from URL"
+
 IMMAGINE
+
+### CONFIGUIRE STORAGE:
+Configuriamo adesso eventuali NVME e SSD da dedicare alle VM e ai LXC (LINUX Container)
+
+Andiamo sul nodo "proxmox" sotto Datacenter ed entriamo nella sezione "Disks"
+
+IMMAGINE
+
+Da qui avremo una visuale su tutti gli hard disk collegati, che siano nvme, ssd, hdd meccanici.
+Io ho deciso di dedicare il mio NVME da 2TB come storage per installarci sopra tutte le varie VM che userò e ho deciso anche di utilizzare il formato file system ZFS al posto di LVM perché lo ritengo più affidabile e performante, anche per una questione di eventuali backup futuri.
+Andiamo perciò nella sezione ZFS sotto Disks e cominciamo cliccando su "Create: ZFS"
+
+IMMAGINE
+
+Diamo il nome, io per esempio ho scelto "nVMe", mi piaceva il gioco di parole che contiene la parola VM all'interno del suo nome.
+Qui avremo anche modo di scegliere il RAID Level, avendone solo 1 a disposizione sono andato a scegliere "Single Disk" ma eventualmente potrete anche fare un MIRROR se preferite.
+
+IMMAGINE
+
+
 
 
 
