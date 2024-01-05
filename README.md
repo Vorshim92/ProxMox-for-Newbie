@@ -12,30 +12,28 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 - [**CONFIGURAZIONE PCI PASSTHROUGH**](#pci-passthrough)
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary> **CONTENUTI** </summary>
+  <summary>CONTENUTI</summary>
   <ol>
     <li>
-      [**SETUP INIZIALE - BIOS**](#setupbios)
+      <a href="#setupbios">SETUP INIZIALE - BIOS</a>
       <ul>
-        <li>[**BIOS**](#bios)</li>
+        <li><a href="#bios">BIOS</a></li>
+        <li><a href="#installazione">INSTALLAZIONE</a></li>
+        <li><a href="#first-login">FIRST LOGIN</a></li>
+        <li><a href="#uefi-bootloader">UEFI BOOTLOADER</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#post-setup">POST SETUP</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#repository">REPOSITORY</a></li>
+        <li><a href="#eliminare-popup-no-subscription">NO POPUP SUBSCRIPTION</a></li>
+        <li><a href="#partitioning">PARTITIONING</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#pci-passthrough">PCI PASSTHROUGH</a></li>
   </ol>
 </details>
 
