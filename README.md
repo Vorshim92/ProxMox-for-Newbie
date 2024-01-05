@@ -9,10 +9,12 @@ Una semplice guida (ITA-ENG) per nabbazzi come me! giusto per tenere  a portata 
 
 - [**SETUP INIZIALE - BIOS**](#setupbios)
 - [**POST SETUP**](#post-setup)
-- [**CONFIGURAZIONE PCI PASSTHROUGH**](#configurazione-pci-passthrough)
+- [**CONFIGURAZIONE PCI PASSTHROUGH**](#pci-passthrough)
 
 
-## SETUP/BIOS:
+# SETUP/BIOS:
+
+### BIOS:
 prima di partire con l'installazione vera e propria di PROXMOX assicuriamoci di mettere l'impostazione UEFI nel BIOS:
 
 > [!IMPORTANT]
@@ -31,6 +33,7 @@ Fatto questo il nostro sistema ProxMox verrà installato senza problemi in modal
 > Ovviamente formattando il pennino USB in modalità GPT UEFI con un tool come Rufus!
 <a title="RUFUS" href="https://rufus.ie/it/">RUFUS LINK</a>
 
+### INSTALLAZIONE:
 
 Cominciamo quindi inserendo il pennino usb precedentemente formattato e avviamolo.
 Seguiranno una serie di immagini esempio del processo di installazione:
@@ -104,7 +107,7 @@ Systemd-Boot è riconoscibile da una schermata nera molto semplice con 1 o 2 rig
 
 
 
-## POST-SETUP:
+# POST-SETUP:
 
 Se è presente una vecchia installazione di Proxmox nel tuo sistema (magari installato su un altro hard disk), ti sarà stato chiesto durante l'ultima installazione di rinominare la vecchia PVE in "pve-old"
 
@@ -118,19 +121,19 @@ e confermiamo con Y
 
 dopo aver fatto questo potremo WIPPARE il vecchio disk utilizzato dalla sezione DISKs sulla GUI
 
-# REPOSITORY
+### REPOSITORY
 Dobbiamo cambiare la repository da Enterprise a No-Enterprise (non avendo un abbonamento con proxmox)
 andiamo sulla GUI nella sezione REPOSITORIES e selezioniamo ADD e scegliamo dall'elenco "No-Subscription"
 non dimenticate di selezionare e disabilitare la repository ENTERPRISE già presente dalla lista.
 adesso o dalla gui di proxmox sempre su REPOSITORY o tramite terminale con APT UPDATE && APT UPGRADE potrete aggiornare le repo e i pacchetti.
 
-# ELIMINARE POPUP “NO SUBSCRIPTION”
+### ELIMINARE POPUP “NO SUBSCRIPTION”
 Send this command:
 ```
 sed -Ezi.bak "s/(Ext.Msg.show\(\{\s+title: gettext\('No valid sub)/void\(\{ \/\/\1/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
 ```
 
-# PARTITIONING
+### PARTITIONING
 E' consigliato anche estendere la partizione PVE BOOT rimuovendo quella data (praticamente lasciando una singola partizione)
 
 estendiamo LVM PVE BOOT SPACE con questi comandi:
@@ -154,7 +157,7 @@ Adesso, andando su "local (proxmox)", sentitevi liberi di caricare tutte le imma
 
 
 
-## CONFIGURAZIONE PCI PASSTHROUGH:
+# PCI PASSTHROUGH:
 
 
 
