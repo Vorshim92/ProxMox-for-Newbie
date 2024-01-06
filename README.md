@@ -109,7 +109,7 @@ se nell'output uscirà invece "systemd-boot" allora sarà SystemD-Boot il bootlo
 Se dovesse comparire qualcosa come questo output
 > Boot0002* proxmox	[...] File(\EFI\PROXMOX\SHIMX64.EFI)
 
-sarà comunque in UEFI ma utilizzerà SHIMX64 invece di GRUB che è il "validatore" per avviare GRUB nel caso in cui dovesse essere attivo SECURE BOOT. 
+sarà comunque in UEFI ma utilizzerà SHIMX64.EFI invece di GRUBX64.EFI (che partirà invece subito dopo). SHIMX dovrebbe essere una specie di "validatore" per avviare GRUB nel caso in cui dovesse essere attivo SECURE BOOT, per poter leggere le chiavi del secureboot, una specie di anello di congiunzione tra firmware e bootloader. 
 
 > [!NOTE]
 > Stranamente da me è rimasto comunque impostato SHIMX anche se Secure Boot è disabilitato. Non è un problema, partirà comunque GRUB. Volendo si può cambiare la entry boot andando nel bios e modificando il file (se il vostro bios vi permette di farlo, se no andrebbe fatto da UEFI SHELL che è un po' più complesso e se ci sarà tempo farò una breve guida per giocare anche con quel tool)
